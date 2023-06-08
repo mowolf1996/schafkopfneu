@@ -1,0 +1,53 @@
+.card 
+{
+    height: 150px;
+    width: 110px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.card img 
+{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+body
+{
+    background-image: url("/Bilder/Tisch.jpg");
+    color: aliceblue;
+    text-align: center;
+}
+
+nav 
+{
+    background-color: darkslategrey;
+    color: white;
+    display: flex;
+    justify-content: center;
+} 
+nav ul 
+{
+    margin: 10;
+    padding: 10;
+} 
+nav li 
+{
+    display: inline-block;
+    margin: 0 100px;
+}
+nav a 
+{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}  
+nav a:hover 
+{
+    background-color: gray;
+    color: white;
+}
