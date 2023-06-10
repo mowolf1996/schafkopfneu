@@ -1,0 +1,72 @@
+body {
+    background-image: url("/Bilder/wallpaperflare.com_wallpaper.jpg");
+    background-position: center;
+    min-height: 100vh;
+    /* 100 von seiten höhe  vh = viewHeight*/
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    background-size: cover;
+    overflow: hidden;
+    /* scrollen nicht erlaubt */
+    display: grid;
+    place-content: center;
+    /* kontent zenteieren */
+}
+
+body>div
+
+/* die dirkete div selektieren */
+    {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+span {
+    background-color: white;
+    border-radius: 17px;
+}
+
+button {
+    background-color: #2e466e;
+    border-radius: 17px;
+    border: 3px solid black;
+    cursor: pointer;
+    color: white;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 18px 49px;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: navy;
+}
+
+.myButton {
+    background-color: #2e466e;
+    border-radius: 17px;
+    border: 3px solid #1f2f47;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 18px 49px;
+    text-decoration: none;
+}
+
+.myButton:hover {
+    background-color: #415989;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}

@@ -1,0 +1,102 @@
+body {
+    background-image: url("/Bilder/Tisch.jpg");
+    color: aliceblue;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#hintergrund {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    height: 100vh;
+}
+
+nav {
+    background-color: darkslategrey;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    margin: 10;
+    padding: 10;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 100px;
+    font-weight: bold;
+    font-size: 1.5em;
+    /* 1em = 16px */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: gray;
+    color: white;
+}
+
+table {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 0;
+}
+
+td {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* flex-richtung nach unten */
+    gap: 1em;
+}
+
+th {
+    padding: 1em;
+}
+
+tr {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+img {
+    width: 1.5em;
+}
+
+.trümpfe {
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.trümpfe div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.tables {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.h2s {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}

@@ -1,0 +1,140 @@
+.card {
+    height: 150px;
+    width: 110px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+* {
+    user-select: none;
+    /* nicht select */
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    display: block;
+
+}
+
+body {
+    background-image: url("/Bilder/Tisch.jpg");
+    color: aliceblue;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* dirkete div in body*/
+body>div {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    height: calc(100vh - 91px);
+    /* nav height - window height */
+}
+
+nav {
+    background-color: darkslategrey;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    margin: 10;
+    padding: 10;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 100px;
+    font-weight: bold;
+    font-size: 1.5em;
+    /* 1em = 16px */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: gray;
+    color: white;
+}
+
+/*#p2 {
+    pointer-events: none;   /* nicht clickbar 
+}*/
+
+#p1, #p2 {
+    position: relative;
+    height: 50vh;
+}
+
+#p1>div, #p2>div {
+    display: flex;
+    gap: 1em;
+}
+
+.wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* elemente auseinander */
+}
+
+.deck1 img, .deck3 img {
+    filter: brightness(0);
+}
+
+
+.log {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    padding: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.selected-card {
+    position: fixed !important;
+    transition: all 0.5s ease-in-out;
+    z-index: 99;
+}
+
+button {
+    position: absolute;
+    background-color: #2e466e;
+    border-radius: 17px;
+    border: 3px solid black;
+    cursor: pointer;
+    color: white;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 18px 49px;
+    text-decoration: none;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.karten {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+}
+
+#moveTargetp2 {
+    left: 60%;
+}

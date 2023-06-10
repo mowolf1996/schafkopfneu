@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Schafkopf</title>
+    <link rel="stylesheet" href="Schafkopfcss.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="Schafkopfjs.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="./">Startseite</a></li>
+            <li><a href="spiel.html">Spielen</a></li>
+            <li><a href="Regeln.html">Regeln</a></li>
+        </ul>
+    </nav>
+    <div>
+        <h1>Offizierskopf</h1>
+        <div class="wrap">
+            <div id="p1">
+                <div class="d deck0"></div>
+                <div class="d deck1"></div>
+                <div class="d deck2"></div>
+                <div class="d deck3"></div>
+            </div>
+            <div id="moveTargetp1" class="karten"></div>
+            <div id="p2">
+                <div class="d deck0"></div>
+                <div class="d deck1"></div>
+                <div class="d deck2"></div>
+                <div class="d deck3"></div>
+            </div>
+            <div id="moveTargetp2" class="karten"></div>
+        </div>
+        <div class="log"></div>
+        <button onclick="window.location.href = 'spiel.html';">Neu Mischen</button>
+    </div>
+
+</body>
+
+</html>
